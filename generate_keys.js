@@ -12,5 +12,5 @@ if(!args.name){
 const keyPair = createECDH("secp521r1")
 const publicKey = keyPair.generateKeys("hex")
 const privateKey = keyPair.getPrivateKey("hex")
-fs.writeFileSync("./data/"+args.name+".key", publicKey)
-fs.writeFileSync("./data/"+args.name+".pub", privateKey)
+fs.writeFileSync("./data/"+args.name+".pub", publicKey)
+fs.writeFileSync("./data/"+args.name+".key", privateKey)
