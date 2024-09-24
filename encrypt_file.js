@@ -5,6 +5,7 @@ const fs = require("fs")
 
 if(!args.private && !args.public && !args.file){
     console.log("Please add --file, --private, --public, parameters to start encryption. ");
+    exit(0)
 }
 
 const origin = createECDH("secp521r1")
